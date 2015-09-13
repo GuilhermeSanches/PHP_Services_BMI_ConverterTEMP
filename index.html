@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Services PHP ProjectLabVI</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<section class="container">	  
+          <legend>Converter Temperature</legend>  
+          <form name="converterForm" id="convForm">
+              <input type="text" name="celsiusInput" class="form-control" placeholder="Celsius">
+              <button type="submit" class="btn btn-success">Convert</button> 
+              <input type="text" name="fahInput" id="inpF" class="form-control" placeholder="Fahrenheit">
+	      </form>	       
+</section>
+
+<section class="containerBMI">	  
+     <legend>BMI Calculator</legend>  
+          <form name="bmiForm" class="formBmi" id="formBmi">
+              <input type="text" id="weightInp" class="form-control" placeholder="Weight">
+              <input type="text" id="heigthtInp" class="form-control" placeholder="Height">
+              <button type="button" id="btn_bmi" class="btn btn-success">Calculate</button> 
+              <input type="text" id="inpF" class="form-control" placeholder="Results">
+	      </form>
+	      <section id="sectionBMIresults">
+	          <legend>Description</legend>
+	          
+	      </section>	       
+</section>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/mainServices.js"></script>
+<script src="js/bmiCalculator/controllerBMI.js"></script>
+<script src="js/bmiCalculator/serviceBMI.js"></script>
+<script src="js/convertTemp/controllerTemp.js"></script>
+<script src="js/convertTemp/serviceTemp.js"></script>
+</body>
+</html>
