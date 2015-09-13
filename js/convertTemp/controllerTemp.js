@@ -29,10 +29,10 @@ var controllerTemp = {
     
     showResult: function(result, type){
             if(type=='C'){
-                var field = document.converterForm.celsiusInput.value = parseFloat(result).toFixed(2);                  
+                var field = document.converterForm.celsiusInput.value =result.toFixed(2);                  
             }
             if(type=='F'){
-                var field = document.converterForm.fahInput.value = parseFloat(result).toFixed(2);                      
+                var field = document.converterForm.fahInput.value = result.toFixed(2);                      
             }    
     }    
 };
