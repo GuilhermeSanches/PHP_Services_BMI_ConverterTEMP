@@ -22,11 +22,12 @@
 }
 
 #weightInp, #heigthtInp{    
+    margin-left: -50px;
     position: absolute;
-    width: 100px;
+    width: 160px;
 }
 #heigthtInp{
-margin-left: 110px;
+margin-left: 120px;
 
 }
 #btn_bmi{
@@ -45,7 +46,11 @@ margin-left: 110px;
     padding: 10px;
     font-style: oblique;
 }
+#results{
+    font-size: 18px;
+    margin-left: 25px;
 
+}
 
 .form-control{
     

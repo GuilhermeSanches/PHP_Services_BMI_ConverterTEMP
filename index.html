@@ -21,13 +21,14 @@
 <section class="containerBMI">	  
      <legend>BMI Calculator</legend>  
           <form name="bmiForm" class="formBmi" id="formBmi">
-              <input type="text" id="weightInp" class="form-control" placeholder="Weight">
-              <input type="text" id="heigthtInp" class="form-control" placeholder="Height">
-              <button type="button" id="btn_bmi" class="btn btn-success">Calculate</button> 
-              <input type="text" id="inpF" class="form-control" placeholder="Results">
+              <input type="text" id="weightInp" name="weight" class="form-control" placeholder="Weight in Kg">
+              <input type="text" id="heigthtInp" name="height" class="form-control" placeholder="Height in Meters">
+              <button type="submit" id="btn_bmi" class="btn btn-success">Calculate</button> 
+              <input type="text" id="inpF" name="results" class="form-control" placeholder="Results">
 	      </form>
-	      <section id="sectionBMIresults">
+	      <section id="sectionBMIresults">              
 	          <legend>Description</legend>
+	           <div id="results"></div>
 	          
 	      </section>	       
 </section>

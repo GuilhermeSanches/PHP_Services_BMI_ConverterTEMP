@@ -17,7 +17,7 @@ var serviceMain = {
                 
         formBmi.addEventListener('submit',  function(event){              
               
-               serviceBmi.checkOnSubmit(formBmi);
+               controllerBMI.checkOnSubmit(formBmi);
                 event.preventDefault();
             });
         

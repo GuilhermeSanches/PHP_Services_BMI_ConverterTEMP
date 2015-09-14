@@ -11,14 +11,14 @@ var controllerTemp = {
             if(form.celsiusInput.value == '' && form.fahInput.value == ''){
                 form.celsiusInput.focus();
                 form.celsiusInput.placeholder = 'Preencha campo Cº';
-                form.fahInput.placeholder = 'Preencha campo Fº';                
+                form.fahInput.placeholder = 'ou Preencha campo Fº';                
             }
             else if(form.celsiusInput.value == ''){
-                var result  = serviceTemp.calculateTempC(parseFloat(form.fahInput.value), callback);            
+                serviceTemp.calculateTempC(parseFloat(form.fahInput.value), callback);            
                 
             }
             else if(form.fahInput.value == ''){
-                var result  = serviceTemp.calculateTempF(parseFloat(form.celsiusInput.value), callback);
+                 serviceTemp.calculateTempF(parseFloat(form.celsiusInput.value), callback);
            
             }
             else{
