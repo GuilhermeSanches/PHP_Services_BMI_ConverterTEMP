@@ -16,8 +16,10 @@ var controllerBMI = {
                     alert("Digite valores diferentes de 0");
                  form.reload();
              }
-             else{
-             serviceBmi.calculateBMI(parseFloat(form.weight.value),parseFloat(form.height.value), callback);             
+             else{                 
+                 var weight = form.weight.value.replace(",", ".");
+                 var height = form.height.value.replace(",", ".");
+             serviceBmi.calculateBMI(parseFloat(weight),parseFloat(height), callback);             
              }
             
     
